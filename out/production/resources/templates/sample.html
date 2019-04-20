@@ -7,7 +7,12 @@
 <body>
     <h1>SAMPLE</h1>
     <form method="post" action="/sample">
-        任意の文字を入力:<input type="text" name="sampleText" th:value="${sampleText_value}" />
+        任意の文字を入力: <input type="text" name="sampleText" th:value="${sampleText_value}" />
+        <input type="submit" value="クリック" />
+    </form>
+    <br />
+    <form method="post" action="/sample/db">
+        従業員IDを入力: <input type="text" name="sampleText2" th:value="${sampleText2_value}" />
         <input type="submit" value="クリック" />
     </form>
 </body>
